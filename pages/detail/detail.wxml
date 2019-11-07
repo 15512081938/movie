@@ -1,0 +1,2 @@
+<import src="/public/templates/content.wxml"></import>
+<template is="detail" data="{{...detailMovie}}"></template>

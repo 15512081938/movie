@@ -1,0 +1,3 @@
+<button sale="{{sale}}" class="{{btncolor}}" size="{{size}}">
+    <text>{{value}}</text>
+</button>

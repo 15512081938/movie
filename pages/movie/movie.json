@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "btns":"/components/btn/btn",
+    "btn1":"/components/btn1/btn1"
+  }
+}

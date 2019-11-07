@@ -1,0 +1,7 @@
+.red {
+    background-color: #f03d37;
+    color: #fff;
+    position: absolute;
+    top: 90rpx;
+    right: 28rpx;
+}

@@ -1,0 +1,13 @@
+function imgurl(str) {
+    if (str == '' || str == undefined || str == null) return '';
+    return str.replace('/w.h/', '/128.180/')
+}
+function cutStr(str) {
+    if (str == '' || str == undefined || str == null) return '';
+    if (str.length < 15) return str;
+    return str.substring(0, 15) + "...";
+}
+module.exports = {
+    imgurl: imgurl,
+    cutStr: cutStr
+}

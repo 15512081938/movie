@@ -1,0 +1,23 @@
+<import src="/public/templates/content.wxml" />
+<view class="nav">
+    <block wx:for="{{items}}" wx:key="items">
+        <view bind:tap="shownav" data-index="{{ index }}" class="{{ shownow[index] }}">
+            {{ item.title }}
+        </view>
+    </block>
+</view>
+<swiper class="swiper" indicator-dots="{{false}}" autoplay="{{false}}" current="{{index}}" interval="{{2500}}" duration="{{500}}" circular="{{true}}" bindchange="change">
+    <swiper-item class="swiperitem">
+        <scroll-view class="movie" scroll-y="{{true}}" scroll-top="{{topnum}}" bind:scrolltoupper="upper" bind:scrolltolower="lower" scroll-with-animation="{{true}}" bind:scroll="scroll">
+            <template is="movie" data="{{list}}" />
+        </scroll-view>
+    </swiper-item>
+    <swiper-item class="swiperitem">
+        <scroll-view class="movie" scroll-y="{{true}}" scroll-top="{{topnum}}" bind:scrolltoupper="upper" bind:scrolltolower="lower" scroll-with-animation="{{true}}" bind:scroll="scroll">
+            <template is="movie1" data="{{list}}" />
+        </scroll-view>
+    </swiper-item>
+</swiper>
+<view class="{{ show }}" bind:tap="gotop">
+    <view class="iconfont icon-huidaodingbu"></view>
+</view>
